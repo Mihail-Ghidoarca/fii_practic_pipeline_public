@@ -9,14 +9,14 @@ on:
 
 # GitHub permissions needed for this workflow, including for OIDC authentication
 permissions:
-  id-token: write  # Required for OIDC to assume AWS roles
-  contents: write   # Needed for repo access (e.g., for plan/apply)
+  id-token: write # Required for OIDC to assume AWS roles
+  contents: write # Needed for repo access (e.g., for plan/apply)
 
 # Define the main job
 jobs:
   terraform:
     name: Terraform
-    runs-on: ubuntu-latest  # Use the latest Ubuntu runner from GitHub
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner from GitHub
 
     steps:
       # Step 1: Checkout the repo's code
